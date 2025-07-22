@@ -1,115 +1,282 @@
 
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    
+}
+.sidebar{
+    background-color: lightgray;
+
+    /* width: 434px; */
+    height: 100vh;
+    transition: transform 0.3s ease-in;
+    position: absolute;
+  
+
 }
 
-body {
-  font-family: 'Segoe UI', sans-serif;
-  line-height: 1.6;
-  background-color: #f4f4f4;
+.sidebar nav{
+    padding: 40px;
 }
 
-/* Header */
-header {
-  background-color: #333;
-  padding: 15px 0;
-  color: #fff;
+.sidebar nav li{
+    list-style: none;
+    font-size: 20px;
+    padding: 25px 0 ;
 }
 
-.container {
-  width: 90%;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.sidebar nav li a{
+    text-decoration: none;
+    color: black;
 }
 
-.logo {
-  font-size: 1.4rem;
-  font-weight: bold;
+.main{
+    /* background-color: yellow; */
+    width: 90vw;
+    
+}
+.infoContainer{
+    /* background-color: aqua; */
+    height: 55vh;
+    width: 80vw;
+    margin: 144px auto;
+    display: flex;
+    justify-content: space-around;
+    /* flex-wrap: wrap; */
+
+}
+.devInfo{
+    display: flex;
+   justify-content: center;
+   flex-direction: column;
+   font-size: 16px;
+   
+
+}
+.devPic img{
+    width: 45vh;
+    height: 45vh;
+    background-color: none;
+
+
+}
+.hello{
+    font-size: 3em;
+
+}
+.name{
+    font-size: 3em;
+
+
+}
+.about{
+    font-size: 2.5em;
+}
+.moreabout{
+    font-size: 2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 23px;
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
+.buttons{
+    margin-top: 24px;
+}
+.btn{
+    padding: 8px;
+    border-radius: 18px;
+    font-weight: bold;
+    background-color: hwb(200 2% 11%);
+    cursor: pointer;
+    margin: 0  3px;
+    font-size: 15px;
+    color: white;
 }
 
-nav a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 0.9rem;
+.btn-sm{
+    font-size: 10px;
+    padding: 7px 13px;
+    margin: 10px 0;
+
 }
 
-/* Hero Section */
-.hero {
-  background-color: #222;
-  color: white;
-  padding: 80px 20px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  text-align: center;
+.btn:hover{
+    background-color: white;
+    color: hwb(200 2% 11%);
+
 }
 
-.hero-content {
-  max-width: 500px;
+/* contactform */
+
+.contactform{
+    padding: 0 34px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 88px;
+
+}
+.contactform h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   /* padding: 12px 0; */
+
 }
 
-.hero-content h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
+.contactform form{
+    margin: 0 40px;
 }
 
-.hero-content p {
-  font-size: 1.1rem;
-  margin-bottom: 20px;
+.contactform div{
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+
+
+}
+.contactform form div input{
+    /* width: 26vw; */
+    border-radius: 5px;
+    margin: 6px 0 0 0;
+    padding: 3px;
 }
 
-.hero-img img {
-  width: 250px;
-  border-radius: 5px;
+#emailHelp{
+    font-size: 8px;
+    color: blue;
+    margin: 0 5px;
 }
 
-.btn {
-  background-color: #00bcd4;
-  color: white;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 4px;
+#form-check{
+    flex-direction: row;
 }
 
-/* About Section */
-.about {
-  display: flex;
-   justify-content: space-around;
-  align-items: center;
-  padding: 60px 20px; 
-  background-color: #fff;
-  flex-wrap: wrap;
-  /* text-align: center;  */
+#form-check input{
+    width: 24px;
+    margin: 3px 0;
+} 
+
+/* blog section */
+
+.blogContainer{
+    margin: 10px 88px;
 }
 
-.about-img img {
-  width: 250px;
-  border-radius: 8px;
-  margin-bottom: 20px;
+
+
+.blogItem{
+    margin: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, sans-serif;
+
 }
 
-.about-text {
-  max-width: 600px;
+h1{
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, sans-serif;
+
+    margin: 23px;
+    
 }
 
-.about-text h2 {
-  font-size: 1.8rem;
-  margin-bottom: 15px;
+p{
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif monospace;
+
 }
 
-.about-text p {
-  margin-bottom: 15px;
-  color: #333;
+/* intro section */
+
+.intro{
+    margin: 10px 88px; 
 }
+
+.intro h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, sans-serif;
+margin: 12px;
+}
+
+.intro p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif monospace;
+margin: 12px;
+
+}
+.skillcontainer{
+    padding: 12px;
+
+}
+.skillItem{
+    display: flex;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 900;
+}
+
+.skill{
+    width: 150px;
+    height: 6px;
+    background-color: brown;
+    border-radius: 50px;
+    border: 2px solid black;
+}
+.hundered{
+    width: 265px;
+    background-color: blueviolet;
+}
+.fifty{
+    width: 125px;
+    background-color: aqua;
+}
+
+.t5{
+    width: 75px;
+    background-color: yellow;
+
+}
+
+ .sidebarGo{
+        transform: translate(-434PX, 0px);
+        position: absolute;
+
+    }
+
+.hamburger{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+.ham{
+    height: 30px;
+    width:  30px;
+    margin-left: 10px;
+}
+.cross{
+     height: 30px;
+    width:  30px;
+    margin-left: 100px;
+
+}
+
+@media (max-width: 1515px) {
+   
+    *{
+        /* background-color: red; */
+    }
+
+    .buttons{
+        font-size: 6px;
+    }
+    .devInfo{
+        font-size: 10px;
+    }
+
+    .devPic{
+        display: none;
+    }
+
+   .intro, .blogContainer, .contactform{
+    margin: 50px 8px;
+
+   }
+    
+} 
+    
